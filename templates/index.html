@@ -5,5 +5,45 @@
 {% endblock %}
 
  {% block body %}
-<h1>Алеша я заебался ждать тебя тут</h1>
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="static/photo_2022-07-20_21-29-46.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Здесь вы можете отыскать специалиста по разработке</h1>
+        <p class="lead">Мы занимаеся разработкой веб-приложений. </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Разработать сайт</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Telegram бот</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Сбор информации</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <!-- <h5 class="modal-title">Modal title</h5> -->
+        <h2 class="fw-bold mb-0">Оставить заявку</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="Имя">
+            <label for="floatingInput">Имя</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Номер телефона">
+            <label for="floatingPassword">Номер телефона</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
