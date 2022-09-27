@@ -1,0 +1,62 @@
+body {
+    background-image: url(img/1616587122_32-p-programmirovanie-fon-40.jpg);
+    size: 120%;
+}
+
+a {
+    position: relative;
+    color: #00a650;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+}
+
+a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #22e2e9;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+a:hover:after,
+a:focus:after {
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+img {
+    /* Устанавливаем размер картинок */
+    margin-top: 100px;
+    width: 300px;
+    height: 200px;
+    float: left;
+
+}
+
+.text {
+    margin-top: 120px;
+    float: right;
+
+}
+
+.text {
+    padding-right: 100px;
+    font-family: 'Lobster', cursive;
+    color: rgb(221, 202, 180);
+    font-size: 20px;
+
+}
+
+h5 {
+    color: royalblue;
+}
