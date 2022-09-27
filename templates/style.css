@@ -5,7 +5,7 @@ body {
 
 a {
     position: relative;
-    color: #00a650;
+    color: #43009b;
     /*задаём цвет ссылки*/
     cursor: pointer;
     line-height: 1;
@@ -21,7 +21,7 @@ a:after {
     /*задаём длинну линии до наведения курсора*/
     height: 2px;
     /*задаём ширину линии*/
-    background-color: #22e2e9;
+    background-color: #f1d11c;
     /*задаём цвет линии*/
     content: "";
     transition: width 0.3s ease-out;
