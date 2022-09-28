@@ -9,11 +9,11 @@
     <title>Главная страница</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Neucha&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,11 +26,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="about.html"
-                       style="color: rgb(255, 115, 0); font-family: 'Lobster', cursive;">О
-                        Нас</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="example.html"
                        style="color: rgb(47, 94, 182); font-family: 'Lobster', cursive;">Примеры
@@ -47,51 +42,132 @@
     </div>
 </nav>
 <div class="text">
-    <h5 class="animate__animated animate__bounce">Разработака Web сайтов</h5>
-    <p class="animate__animated animate__bounce">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab blanditiis, quasi distinctio quas est<br>
-        corporis omnis itaque harum magni aliquam natus ullam officiis ad totam perferendis accusantium iste
-        nam<br>
-        impedit!<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab blanditiis, quasi distinctio quas est<br>
-        corporis omnis itaque harum magni aliquam natus ullam officiis ad totam perferendis accusantium iste
-        nam<br>
-        impedit!<br>
+    <h5 class="animate__animated animate__bounceInLeft">Разработака Web сайтов</h5>
+    <p class="animate__animated animate__bounceInLeft">
+        Наше основное направление – создание сайтов «под ключ» любой сложности.<br> Лендинги, сайты-визитки,<br>
+        корпоративные сайты и интернет-магазины<br> всё это мы можем сделать с нуля.<br>
     </p>
 </div>
-<img src="static/img/2-5-create-gSite-edit.svg">
+<img src="img/2-5-create-gSite-edit.svg" class="animate__animated animate__bounceInRight" data-aos="fade-in">
 <div class="text">
-    <h5 class="animate__animated animate__bounce">Парсинг</h5>
-    <p class="animate__animated animate__bounce">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab blanditiis, quasi distinctio quas est<br>
-        corporis omnis itaque harum magni aliquam natus ullam officiis ad totam perferendis accusantium iste
-        nam<br>
-        impedit!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab blanditiis, quasi distinctio quas
-        est<br>
-        corporis omnis itaque harum magni aliquam natus ullam officiis ad totam perferendis accusantium iste
-        nam<br>
-        impedit!<br>
+    <h5 class="animate__animated animate__bounceInLeft">Парсинг</h5>
+    <p class="animate__animated animate__bounceInLeft">
+        Парсинг данных с сайта – это программно-синтаксический<br>анализ веб-страниц и сайтов с целью
+        получения<br>необходимой информации, обработки полученных<br>сведений по заданным параметрам и их
+        последующей<br>генерации в определенный вид. Услуги парсинга позволяют<br>значительно сократить временные и
+        финансовые затраты<br>на создание веб-страницы, интернет-магазина или другого<br>ресурса, блога.<br>
     </p>
 </div>
-<img src="static/img/main.svg">
+<img src="img/main.svg" class="animate__animated animate__bounceInRight">
 <div class="text">
-    <h5 class="animate__animated animate__bounce">Разработака чат-ботов</h5>
-    <p class="animate__animated animate__bounce">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab blanditiis, quasi distinctio quas est<br>
-        corporis omnis itaque harum magni aliquam natus ullam officiis ad totam perferendis accusantium iste
-        nam<br>
-        impedit!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab blanditiis, quasi distinctio quas
-        est<br>
-        corporis omnis itaque harum magni aliquam natus ullam officiis ad totam perferendis accusantium iste
-        nam<br>
-        impedit!<br>
+    <h5 class="animate__animated animate__bounceInLeft">Разработака чат-ботов</h5>
+    <p class="animate__animated animate__bounceInLeft">
+        Чат-бот - это программа,<br>способная в автоматическом режиме<br>обслуживать клиентов
+        в мессенджерах<br>без участия оператора.<br>Такие боты могут предоставлять пользователям<br>
+        информацию, отвечать на вопросы,<br>и многое другое.
     </p>
 </div>
-<img src="static/img/android.svg">
+<img src="img/android.svg" class="animate__animated animate__bounceInRight">
+
+<!-- Начало страницы -->
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1" style="color: rgb(56, 26, 104);">Сайт под ключ</h2>
+        <p class="lead" style="color: rgb(207, 190, 39); font-family: 'Neucha', cursive;">В зависимости от цели
+            разработки, ваш сайт
+            может:<br>
+
+            Продавать ваши услуги или товар<br>
+            Информировать или учить вашу аудиторию<br>
+            Развлекать или решать определенную задачу пользователя по запросу в интернете<br></p>
+    </div>
+    <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+             height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+             preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <image class="animate__animated animate__rollIn" width="100%" height="100%" fill="#eee"
+                   xlink:href='img/создание-сайтов-от-компании-киборг.png'/>
+        </svg>
+
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1" style="color: rgba(0, 195, 255, 0.651);">Парсинг</h2>
+        <p class="lead" style="color: rgb(128, 197, 18); font-family: 'Neucha', cursive;">Парсинг обычно
+            применяют<br>когда нужно быстро собрать большой объем данных.<br>Его
+            выполняют с помощью специальных сервисов — парсеров.<br>Мы расскажен, с какой целью можно использовать
+            парсинг.<br>Что он позволяет узнать о конкурентах<br></p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+             height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+             preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <image class="animate__animated animate__rollIn" width="100%" height="100%" fill="#eee"
+                   xlink:href='img/1-1.png'/>
+        </svg>
+
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1" style="color: rgb(8, 128, 18);">Чат-боты,наше ВСЕ)</h2>
+        <p class="lead" style="color: rgb(183, 240, 232); font-family: 'Neucha', cursive;">Чат-боты в различных
+            мессенджерах и социальных сетях в форме диалога могут<br>выполнять
+            следующие функции:<br>
+
+            Рекламировать товары и услуги с вашего веб-ресурса и ресурсов ваших партнеров;<br>
+            Увеличивать доверие к компании и узнаваемость бренда,<br>предоставляя удобный метод взаимодействия
+            клиента с компанией;<br>
+            Снимать часть нагрузки с менеджеров, предоставляя первичную консультацию клиентам и отвечая на часто
+            задаваемые вопросы;<br>
+            Собирать информацию о целевой аудитории компании для оптимизации дальнейшей стратегии продвижения.</p>
+    </div>
+    <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+             height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+             preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <image class="animate__animated animate__rollIn" width="100%" height="100%" fill="#eee"
+                   xlink:href='img/4bc9dc9c-a8e1-4700-b28e-450b3a26db4d.png'/>
+        </svg>
+
+    </div>
+</div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+
+
+</div>
+<!-- Футер -->
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Контакты</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Отзывы клиентов</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 BrutalPage, Inc</p>
+    </footer>
+</div>
+<div class="container marketing">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
